@@ -1,10 +1,50 @@
 {% extends "base.html" %}
 
-{% block title %}
-    Menu - Pulp Kitchen
-{% endblock %}
+{% block title %}Menu - Pulp Kitchen{% endblock %}
 
 {% block content%}
+<div class="text-center mb-5">
     <h1 class="display-4">Our Menu</h1>
-    <p>Freshly grilled, fried and flipped just for you.</p>
+    <p class="lead">Fresh classics with a modern twist</p>
+</div>
+
+<!-- Category: Breakfast -->
+ <h2 class="mb-4">Breakfast</h2>
+ <div class="row g-4 mb-5">
+    <div class="col-md-4">
+        <div class="card h-100">
+            <img src="{{ url_for('static', filename='img/pancakes.jpg') }}" class="card-img-top" alt="Pancakes">
+            <div class="card-body">
+                <h5 class="card-title">Stacked Pancakes</h5>
+                <p class="card-text">Fluffy buttermilk pancakes with maple syrup and berries.</p>
+                <p class="fw-bold">£6.95</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card h-100">
+            <img src="{{ url_for('static', filename='img/american_breakfast.jpg') }}" class="card-img-top" alt="American Breakfast">
+            <div class="card-body">
+                <h5 class="card-title">American Breakfast</h5>
+                <p class="card-text">Scrambled eggs, turkey bacon, hash, toast. All the good stuff Uncle Sam wants you to have.</p>
+                <p class="fw-bold">£8.95</p>
+            </div>
+        </div>
+    </div>
+ </div>
+
+ <!-- Category: Drinks -->
+<h2 class="mb-4">Drinks</h2>
+<div class="row g-4 mb-5">
+    <div class="col-md-4">
+        <div class="card h-100">
+            <img src="{{ url_for('static', filename='img/chocolate_milkshake.jpg') }}" class="card-img-top" alt="Chocolate Milkshake">
+            <div class="card-body">
+                <h5 class="card-title">Chocolate Milkshake</h5>
+                <p class="card-text">Rich and creamy with whipped cream on top.</p>
+                <p class="fw-bold">£3.50</p>
+            </div>
+        </div>
+    </div>
+</div>
 {% endblock %}

@@ -20,6 +20,12 @@ h1, h2, h3, h4, .navbar-brand, .nav-link, .btn {
     color: #fff !important;
 }
 
+.card-img-top {
+    height: 400px;
+    object-fit: cover;
+    object-position: center;
+}
+
 footer {
     background-color: #dc3545;
     color: #fff;
