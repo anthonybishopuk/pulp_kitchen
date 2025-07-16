@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Pulp Kitchen{% endblock %}
+
+{% block hero %}
+    <img src="{{ url_for('static', filename='img/diner_interior.jpg') }}"
+        class="w-100 mb-4"
+        style="height: 500px; object-fit: cover; object-position: center; display: block;"
+         alt="Retro diner interior">
+{% endblock %}
+
+{% block content %}
+
+    <div class="text-center">
+        <h1 class="display-3 mb-4">Welcome to Pulp Kitchen</h1>
+        <p class="lead">Where flavour meets flair - serving up classic diner plates with a modern twist</p>
+        <hr class="my-5">
+        <p>Open daily for breakfast, lunch and late-night milkshakes.</p>
+        <a href="{{ url_for('menu') }}" class="btn btn-danger btn-lg mt-3 mb-5">View Menu</a>
+    </div>
+{% endblock %}
