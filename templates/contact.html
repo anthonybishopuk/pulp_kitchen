@@ -1,10 +1,51 @@
 {% extends "base.html" %}
 
+{% block hero %}
+    <img src="{{ url_for('static', filename='img/phone2.jpg') }}"
+        class="w-100 mb-4"
+        style="height: 500px; object-fit: cover; object-position: center; display: block;"
+         alt="Telephone">
+{% endblock %}
+
 {% block title %}
-    Contact - Pulp Kitchen
+    Contact Info Section:
 {% endblock %}
 
 {% block content%}
-    <h2>Pulp Kitchen</h2>
-    <p>Call us on 020 3333 1954.</p>
+<div class="container">
+    <div class="row">
+        <div class="col-md-6">
+            <h2 class="mb-4">Contact Info Section</h2>
+            <p><strong>Address</strong><br />
+            Burger Street, London WC2A 2JR</p>
+
+            <p><strong>Phone</strong><br />
+            020 3333 1954</p>
+            
+            <p><strong>Email</strong><br />
+            <a href="mailto:contact@pulpkitchen.com">contact@pulpkitchen.com</a></p>
+
+            <p><strong>Opening Hours</strong><br />
+            Mon-Fri: 8am - 8pm<br />
+            Sat-Sun: 9am - 10pm</p>
+        </div>
+        <div class="col-md-6">
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Your Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Your name">
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Your Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="your@email.com">
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="What's on your mind?"></textarea>
+                </div>
+                <button type="submit" class="btn btn-danger">Send</button>
+            </form>
+        </div>
+    </div>
+</div>
 {% endblock %}

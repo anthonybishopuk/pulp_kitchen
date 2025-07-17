@@ -8,6 +8,10 @@ h1, h2, h3, h4, .navbar-brand, .nav-link, .btn {
     font-family: "Carter One", cursive;
 }
 
+a {
+    color: #2b2b2b;
+}
+
 .navbar {
     background-color: #dc3545;
 }

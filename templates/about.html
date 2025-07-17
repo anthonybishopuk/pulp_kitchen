@@ -1,10 +1,26 @@
 {% extends "base.html" %}
 
+{% block hero %}
+    <img src="{{ url_for('static', filename='img/sundae_morning.jpg') }}"
+        class="w-100 mb-4"
+        style="height: 500px; object-fit: cover; object-position: center; display: block;"
+         alt="Sundae welcome">
+{% endblock %}
+
 {% block title %}
     About - Pulp Kitchen
 {% endblock %}
 
 {% block content%}
-    <h2>About Us</h2>
-    <p>Where did we come from?</p>
+    <h2 class="mb-4">About Us</h2>
+    <p class="lead"">Flavour with a Flashback</h4>
+    <p class="mb-4"><strong>Pulp Kitchen is your neighbourhood diner with a twist of nostalgia</strong><br />
+    We're all about big flavours, better coffee and a place where stories are swapped over pancakes and pie.<br/>
+    Born out of a love for 1950s Americana and comfort food done right, we bring a touch of the old school to your everyday.</p>
+    
+    <p class="mb-4"><strong>Whether it's breakfast at 8am or burgers at 8pm, we've got you.</strong><br />
+    From fresh-cooked classics to decadent desserts, our team serves it all up with a smile and a soundtrack that'll have you humming through your hash browns.</p>
+    
+    <p class="mb-4"><strong>Family-run. Film-inspired. Food that sticks with you.</strong><br />
+    Pull up a chair. We've been expecting you.</p>
 {% endblock %}

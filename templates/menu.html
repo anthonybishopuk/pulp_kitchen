@@ -13,7 +13,7 @@
  <div class="row g-4 mb-5">
     <div class="col-md-4">
         <div class="card h-100">
-            <img src="{{ url_for('static', filename='img/pancakes.jpg') }}" class="card-img-top" alt="Pancakes">
+            <img src="{{ url_for('static', filename='img/menu_pics/pancakes.jpg') }}" class="card-img-top" alt="Pancakes">
             <div class="card-body">
                 <h5 class="card-title">Stacked Pancakes</h5>
                 <p class="card-text">Fluffy buttermilk pancakes with maple syrup and berries.</p>
@@ -23,7 +23,7 @@
     </div>
     <div class="col-md-4">
         <div class="card h-100">
-            <img src="{{ url_for('static', filename='img/american_breakfast.jpg') }}" class="card-img-top" alt="American Breakfast">
+            <img src="{{ url_for('static', filename='img/menu_pics/american_breakfast.jpg') }}" class="card-img-top" alt="American Breakfast">
             <div class="card-body">
                 <h5 class="card-title">American Breakfast</h5>
                 <p class="card-text">Scrambled eggs, turkey bacon, hash, toast. All the good stuff Uncle Sam wants you to have.</p>
@@ -31,18 +31,83 @@
             </div>
         </div>
     </div>
+        <div class="col-md-4">
+        <div class="card h-100">
+            <img src="{{ url_for('static', filename='img/menu_pics/avocado_smash.jpg') }}" class="card-img-top" alt="Avocado Smash">
+            <div class="card-body">
+                <h5 class="card-title">Avocado Smash</h5>
+                <p class="card-text">Sourdough toast topped with smashed avocado, chilli flakes, and a poached egg.</p>
+                <p class="fw-bold">£6.75</p>
+            </div>
+        </div>
+    </div>
  </div>
 
- <!-- Category: Drinks -->
+<!-- Category: Mains -->
+<h2 class="mb-4">Mains</h2>
+<div class="row g-4 mb-5">
+    <div class="col-md-4">
+        <div class="card h-100">
+            <img src="{{ url_for('static', filename='img/menu_pics/cheeseburger.jpg') }}" class="card-img-top" alt="Cheesburger">
+            <div class="card-body">
+                <h5 class="card-title">Classic Cheeseburger</h5>
+                <p class="card-text">A 6oz beef patty, american cheese, red onion, pickles, ketchup and mustard in a brioche bun.</p>
+                <p class="fw-bold">£10.95</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card h-100">
+            <img src="{{ url_for('static', filename='img/menu_pics/buttermilk_chicken.jpg') }}" class="card-img-top" alt="Buttermilk Fried Chicken">
+            <div class="card-body">
+                <h5 class="card-title">Buttermilk Fried Chicken</h5>
+                <p class="card-text">Buttermilk fried chicken, cabbage slaw, aioli, house-made bun & chicory salad</p>
+                <p class="fw-bold">£9.95</p>
+            </div>
+        </div>
+    </div>
+        <div class="col-md-4">
+        <div class="card h-100">
+            <img src="{{ url_for('static', filename='img/menu_pics/grilled_cheese.jpg') }}" class="card-img-top" alt="Grilled Cheese Melt">
+            <div class="card-body">
+                <h5 class="card-title">Grilled Cheese Melt</h5>
+                <p class="card-text">Sourdough toast topped with smashed avocado, chilli flakes, and a poached egg.</p>
+                <p class="fw-bold">£6.95</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Category: Drinks -->
 <h2 class="mb-4">Drinks</h2>
 <div class="row g-4 mb-5">
     <div class="col-md-4">
         <div class="card h-100">
-            <img src="{{ url_for('static', filename='img/chocolate_milkshake.jpg') }}" class="card-img-top" alt="Chocolate Milkshake">
+            <img src="{{ url_for('static', filename='img/menu_pics/chocolate_milkshake.jpg') }}" class="card-img-top" alt="Chocolate Milkshake">
             <div class="card-body">
                 <h5 class="card-title">Chocolate Milkshake</h5>
                 <p class="card-text">Rich and creamy with whipped cream on top.</p>
                 <p class="fw-bold">£3.50</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card h-100">
+            <img src="{{ url_for('static', filename='img/menu_pics/strawberry_milkshake.jpg') }}" class="card-img-top" alt="Strawberry Milkshake">
+            <div class="card-body">
+                <h5 class="card-title">Strawberry Milkshake</h5>
+                <p class="card-text">Rich and creamy with whipped cream on top.</p>
+                <p class="fw-bold">£3.50</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-4">
+        <div class="card h-100">
+            <img src="{{ url_for('static', filename='img/menu_pics/coffee.jpg') }}" class="card-img-top" alt="Coffee">
+            <div class="card-body">
+                <h5 class="card-title">Various coffees</h5>
+                <p class="card-text">Keep awake all day with our delicious coffees</p>
+                <p class="fw-bold">£4.50</p>
             </div>
         </div>
     </div>
