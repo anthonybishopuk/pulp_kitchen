@@ -1,0 +1,62 @@
+{
+  "breakfast": [
+    {
+        "name": "Pancake Stack",
+        "description": "Fluffy pancakes with maple syrup and butter",
+        "price": "£5.95",
+        "image": "img/menu_pics/pancakes.jpg"
+    },
+    {
+        "name": "American Breakfast",
+        "description": "Scrambled eggs, turkey bacon, hash, toast. All the good stuff Uncle Sam recommends",
+        "price": "£8.50",
+        "image": "img/menu_pics/american_breakfast.jpg"
+    },
+    {
+        "name": "Avocado Smash",
+        "description": "Sourdough toast topped with smashed avocado, chilli flakes, and a poached egg.",
+        "price":"6.75",
+        "image": "img/menu_pics/avocado_smash.jpg"
+    }
+  ],
+  "mains": [
+    {
+      "name": "Classic Cheeseburger",
+      "description": "Beef patty, cheese, lettuce, tomato, and pickles",
+      "price": "£10.95",
+      "image": "img/menu_pics/cheeseburger.jpg"
+    },
+    {
+        "name": "Buttermilk Fried Chicken",
+        "description": "Buttermilk fried chicken, cabbage slaw, aioli, house-made bun & chicory salad",
+        "price": "£9.95",
+        "image": "img/menu_pics/buttermilk_chicken.jpg"
+    },
+    {
+        "name": "Grilled Cheese Melt",
+        "description": "Sourdough toast topped with smashed avocado, chilli flakes, and a poached egg",
+        "price": "£6.95",
+        "image": "img/menu_pics/grilled_cheese.jpg"
+    }
+  ],
+    "drinks": [
+    {
+      "name": "Chocolate Milkshake",
+      "description": "Rich and creamy with whipped cream on top",
+      "price": "£3.50",
+      "image": "img/menu_pics/chocolate_milkshake.jpg"
+    },
+        {
+      "name": "Strawberry Milkshake",
+      "description": "Rich and creamy with whipped cream on top",
+      "price": "£3.50",
+      "image": "img/menu_pics/strawberry_milkshake.jpg"
+    },
+        {
+      "name": "Various coffees",
+      "description": "Stay awake all day thanks to our delicious coffee selection",
+      "price": "£4.50",
+      "image": "img/menu_pics/coffee.jpg"
+    }
+  ]
+}

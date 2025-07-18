@@ -1,4 +1,6 @@
-from flask import Flask, render_template
+import json
+import smtplib
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
@@ -19,7 +21,9 @@ def contact():
 
 @app.route("/menu")
 def menu():
-    return render_template("menu.html")
+    with open("static/data/menu.json") as f:
+        menu_data = json.load(f)
+    return render_template("menu.html", menu = menu_data)
 
 if __name__ == "__main__":
     app.run(debug=True)
